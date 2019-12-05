@@ -13,6 +13,8 @@ public class MealTo {
     protected final String description;
     protected final int calories;
     protected final boolean excess;
+    //    private final Supplier<Boolean> excess;
+    //    private final AtomicBoolean excess;
 
     public MealTo(LocalDateTime dateTime, String description, int calories, boolean excess) {
         this.dateTime = dateTime;
