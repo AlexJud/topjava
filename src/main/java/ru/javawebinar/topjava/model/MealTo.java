@@ -7,7 +7,6 @@ import lombok.ToString;
 import java.time.LocalDateTime;
 
 @Getter
-@ToString
 public class MealTo {
 
     protected final LocalDateTime dateTime;
