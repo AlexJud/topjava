@@ -1,8 +1,6 @@
 package ru.javawebinar.topjava.model;
 
-import lombok.Data;
 import lombok.Getter;
-import lombok.ToString;
 
 import java.time.LocalDateTime;
 
@@ -26,6 +24,7 @@ public class MealTo {
 //    public Boolean getExcess() {
 //        return excess.get();
 //    }
+
 
     @Override
     public String toString() {

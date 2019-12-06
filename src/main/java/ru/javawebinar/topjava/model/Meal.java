@@ -1,9 +1,9 @@
 package ru.javawebinar.topjava.model;
 
-import lombok.Data;
-import lombok.Getter;
 
-import java.time.LocalDate;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.time.LocalDateTime;
 
 @Getter
@@ -17,6 +17,5 @@ public class Meal {
         this.description = description;
         this.calories = calories;
     }
-
 
 }
