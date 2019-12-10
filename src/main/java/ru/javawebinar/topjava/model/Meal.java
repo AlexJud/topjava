@@ -7,9 +7,7 @@ import lombok.Setter;
 import java.time.LocalDateTime;
 
 @Getter
-public class Meal {
-    @Setter
-    private Integer id;
+public class Meal extends AbstractBaseEntity {
     protected final LocalDateTime dateTime;
     protected final String description;
     protected final int calories;
@@ -19,15 +17,12 @@ public class Meal {
     }
 
     public Meal(Integer id, LocalDateTime dateTime, String description, int calories) {
-        this.id = id;
+        super(id);
         this.dateTime = dateTime;
         this.description = description;
         this.calories = calories;
     }
 
-    public boolean isNew() {
-        return id == null;
-    }
 
 
 }
